@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:MyPages ="clr-namespace:Music.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            Title="Music :v"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor ="{StaticResource ColorSecundary}"
+            android:TabbedPage.BarSelectedItemColor="{StaticResource ColorPrimary}"
+            BarBackgroundColor="{StaticResource ColorAccent}"
+            BackgroundColor="{StaticResource ColorSecundary}"
+            x:Class="Music.Views.MainPage">
+    <TabbedPage.Children>
+        <MyPages:ArtistPage Title="Artistas" IconImageSource="artist.png"/>
+        <MyPages:AlbumPage Title="Albunes" IconImageSource="album.png"/>
+        <MyPages:SongPage Title="Canciones" IconImageSource="song.png"/>
+        <MyPages:ListPage Title="Listas" IconImageSource="list.png"/>
+        <MyPages:SettingsPage Title="Configuracion" IconImageSource="settings.png"/>
+    </TabbedPage.Children>
+</TabbedPage>
